@@ -1,0 +1,27 @@
+{
+  "name": "typeorm0.3-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "typeorm": "typeorm-ts-node-commonjs",
+    "mg:create": "typeorm migration:create",
+    "mg:show:js": "typeorm migration:show -d ormconfig.js",
+    "mg:run:js": "typeorm migration:run --dataSource=./ormconfig.js",
+    "mg:show:ts": "typeorm migration:show -d ormconfig.ts",
+    "mg:run:ts": "typeorm migration:run --dataSource=./ormconfig.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^8.7.3",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.42",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.3"
+  }
+}
